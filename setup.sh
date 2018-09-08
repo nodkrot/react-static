@@ -23,4 +23,4 @@ aws s3api put-bucket-policy --bucket $BUCKET_NAME --policy \
     ]
 }'
 
-sed -n -e 's:react-static:'$BUCKET_NAME':g' package.json
+sed -i '' 's/react-static/'$BUCKET_NAME'/g' package.json

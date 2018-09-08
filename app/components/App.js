@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import axios from 'axios'
 import Row from 'antd/lib/row'
 import Col from 'antd/lib/col'
 import Icon from 'antd/lib/icon'
@@ -8,12 +7,6 @@ import Layout from 'antd/lib/layout'
 const { Header, Content, Footer } = Layout
 
 export default class App extends Component {
-
-  componentDidMount() {
-    axios.get('/health').then((res) => {
-      console.log(res.data)
-    })
-  }
 
   render() {
     return (

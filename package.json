@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "NODE_ENV=development parcel app/index.html",
-    "build": "NODE_ENV=production parcel build app/index.html",
-    "deploy": "npm run build && aws s3 sync dist/ s3://react-static/",
+    "deploy": "NODE_ENV=production parcel build app/index.html && aws s3 sync dist/ s3://recipema.com/",
     "setup": "./setup.sh"
   },
   "dependencies": {

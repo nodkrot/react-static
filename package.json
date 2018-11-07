@@ -4,8 +4,8 @@
   "description": "Quick app starter for static websites hosted in AWS S3",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_ENV=development parcel app/index.html",
-    "deploy": "NODE_ENV=production parcel build app/index.html && aws s3 sync dist/ s3://recipema.com/",
+    "start": "parcel app/index.html",
+    "deploy": "parcel build app/index.html && aws s3 sync dist/ s3://recipema.com/",
     "setup": "./setup.sh"
   },
   "dependencies": {
